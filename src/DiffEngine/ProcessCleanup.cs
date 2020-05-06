@@ -25,8 +25,13 @@ namespace DiffEngine
             {
                 commands = FindAll().ToList();
             }
+            else if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
+            {
+                commands = FindAll().ToList();
+            }
             else
             {
+                //ps -eo command
                 commands = new List<ProcessCommand>();
             }
         }

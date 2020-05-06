@@ -17,6 +17,11 @@ public class ProcessCleanupTests :
             Debug.WriteLine($"{x.Process} {x.Command}");
         }
     }
+    [Fact]
+    public void Foo()
+    {
+        
+    }
 
     public ProcessCleanupTests(ITestOutputHelper output) :
         base(output)
